@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+
+
+<html lang="lt">
+
+    <head>        
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="Author" content="Karolina Civilyte">
+        <meta name="Description" content="Pirmas labaratornis darbas su HTML">
+        <meta name="keywords" content="HTML CSS">
+        <meta name="Language" content="lt">
+        <title>lab</title>
+
+        <style>
+            table
+            {
+                border-collapse: collapse;
+            }
+            th 
+            {
+                border: 1px solid black;
+                border-bottom: 3px solid black; 
+            }
+            td
+            {
+                border: 1px solid black;
+                padding: 2px;
+                width: 300px;
+            }
+            .igudziai_table_content
+            {
+                margin-left: auto;
+                margin-right: auto;
+                background-color: rgb(161, 216, 198);
+            }
+            .galerija_table_content
+            {
+                border: 0px;
+                border-color: transparent;
+                margin-left: auto;
+                margin-right: auto; 
+            }
+            .galerija_table_td
+            {
+                border: none;
+            }
+        </style>
+
+    </head>
+
+    <!-- <Karolina Civilyte> -->
+    <body>
+        
+        
+        <main id = "main">
+            <!-- Apie -->
+            <section id="apie">
+                <div class="apie_section">
+                    <div class="apie_title">
+                        <h2 style="text-align: center;"><b>Apie mane</b></h2>
+                    </div>
+                    <div class="apie_paragraph">
+                        <p style="text-align: center;">
+                          "Everything has its cause and effect. 
+                          But most people only see what is happening now, and never ask why." - Albert Einstein
+                        </p>
+                    </div>
+                </div>
+            </section>
+            <!-- Faktai -->
+            <section id="faktai">
+                <div class="faktai_title">
+                <h2 style="text-align: center;">Faktai</h2>
+                </div>
+                <div class="faktai_paragraph">
+                    <ul>
+                        <li>I have a twin sister.</li>
+                        <li>like to travel.</li>
+                        <li>likes to take pictures.</li>
+                    </ul>
+                </div>
+            </section>
+            <!-- Įgudžiai -->
+            <section id="igudziai">
+                <div class="igudziai_title">
+                    <h2 style="text-align: center;">Įgudžiai</h2>
+                    </div>
+                    <div class="igudziai_table">
+                        <table class="igudziai_table_content">
+                            
+                            <tr>
+                                <th>Procrastination</th>
+                                <th>Adaptation</th>
+                                <th>Communication</th>
+                            </tr>
+                            <tr>
+                                <td style="text-align: center;">
+                                    <img src="skill1.jpeg" alt="placeholder1" height="200" width="300">
+                                </td>
+                                <td style="text-align: center;">
+                                    <img src="skill2.jpg" alt="placeholder2" height="200" width="300">
+                                </td>
+                                <td style="text-align: center;">
+                                    <img src="skill3.jpg" alt="placeholder3" height="200" width="300">
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+            </section>
+            <!-- Galerija -->
+            <section id="galerija">
+                <div class="galerija_title">
+                    <h2 style="text-align: center;">Galerija</h2>
+                </div>
+                <div class="galerija_table">
+                    <table class="galerija_table_content">
+                        <tr>
+                            <td class="galerija_table_td">
+                                <video width="320" height="240" controls>
+                                    <source width="320" height="240" src="DolomitesCinematic4KMavicAir2-DroneVideo-(1080p).mp4" type="video/mp4">
+                                </video>
+                            </td>
+                            <td class="galerija_table_td" >
+                              <iframe width="320" height="240" src="https://www.youtube.com/embed/RsfNXWo8zMU" title="AMAZING aerial footage of the Dolomites Italy  | 4k Cinematic Drone Video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                              </td>
+                            <td class="galerija_table_td">
+                                <audio width="320" height="240" controls>
+                                    <source width="320" height="240" src="RiverFlowsInYou.mp3" type="audio/mp3">
+                                </audio>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </section>
+        </main>
+
+    </body>
