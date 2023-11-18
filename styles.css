@@ -1,0 +1,115 @@
+.vertical-stack {
+  display: flex;
+  flex-direction: column; 
+  background: transparent;
+ 
+}
+.vertical-stack * {
+  margin-bottom: 10px; 
+}
+    
+    
+    .aligncenter{
+      display: flex;
+      flex-direction: column; 
+      align-items: center;
+      text-align: center;
+      padding-top: 10px;
+
+    }
+    .alignfromleft{
+padding-left: 420px;
+
+    }
+    .alignfromleft2{
+      padding-left: 420px;
+      margin-top: -200;
+
+    }
+
+    .horizontal-stack {
+  display: flex;
+  flex-direction: row; 
+  background: transparent;
+ 
+}
+.horizontal-stack * {
+  margin-left: 200px; 
+}
+
+
+.percentage-scale {
+      width: 20%;
+      height: 30px;
+      background-color: #ad9595;
+      position: relative;
+    }
+
+    .percentage-bar {
+      height: 100%;
+      background-color: #4CAF50;
+      position: absolute;
+    }
+
+    .percentage-label {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 100%;
+      text-align: center;
+      color: #000;
+    }
+    .up{
+
+      margin-bottom: -125px;
+    }
+ .slider{
+
+  background: transparent;
+  
+ }
+ .name {
+  background: transparent;
+  position: relative;
+  align-items: center;
+  text-align: center;
+  margin-top: 0px;
+  left: 0px; /* Adjust the value based on how much you want to move it left */
+}
+
+
+
+
+.container22{
+  position: relative;
+  background-attachment: fixed;
+}
+
+.text-overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: black; /* Set the text color to contrast with the image */
+  text-align: center;
+  font-size: 48px; /* Adjust the font size as needed */
+  
+}
+.parent-container {
+height: 100vh; /* Adjust to your needs */
+width: 100vw; /* Adjust to your needs */
+}
+.box {
+height: 100%;
+width: 100%;
+background-image: url(Dolomites.jpeg);
+background-attachment: fixed;
+object-fit: cover;
+background-size: cover;
+display: flex; 
+align-items: center; 
+justify-content: center; 
+color: rgb(0, 0, 0); 
+text-align: center; 
+font-size: 50px;
+}
