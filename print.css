@@ -1,0 +1,41 @@
+.print{
+    display: inline-block;
+    text-align: left;
+}
+.print:hover{
+    cursor: pointer;
+    color: #ff0000;
+}
+@media print {
+    body *{
+        visibility: hidden;
+        font-family: serif;
+    }
+    .resume, .resume * {
+        visibility: visible;
+        font-family: serif;
+    }
+    .resume_title{
+        display: none;
+    }
+    .resume{
+        position: absolute;
+        left: 0;
+        top: 0;
+        font-family: serif;
+    }
+    .resume h2,h3,h4{
+        font-family: serif;
+    }
+    .print{
+        display: none;
+    }
+    .resume-blocks{
+        flex-direction: column;
+        padding: 0;
+        margin: 0;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+    @page { counter-reset: page 1}
+}

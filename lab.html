@@ -2,145 +2,280 @@
 
 
 <html lang="lt">
+	<head>        
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="Author" content="Karolina Civilyte">
+		<meta name="Description" content="Pirmas labaratornis darbas su HTML">
+		<meta name="keywords" content="HTML CSS">
+		<meta name="Language" content="lt">
+		<link rel="stylesheet" type="text/css" href="styles.css" />  
+		<link rel="stylesheet" href="print.css">
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+		<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>		
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 
-    <head>        
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="Author" content="Karolina Civilyte">
-        <meta name="Description" content="Pirmas labaratornis darbas su HTML">
-        <meta name="keywords" content="HTML CSS">
-        <meta name="Language" content="lt">
-        <link rel="stylesheet" type="text/css" href="styles.css" />
+		<title>lab</title>
 
-        <title>lab</title>
-
-        <style>
-            table
-            {
-                border-collapse: collapse;
-            }
-            th 
-            {
-                border: 1px solid black;
-                border-bottom: 3px solid black; 
-            }
-            td
-            {
-                border: 1px solid black;
-                padding: 2px;
-                width: 300px;
-            }
-            .igudziai_table_content
-            {
-                margin-left: auto;
-                margin-right: auto;
-                background-color: rgb(161, 216, 198);
-            }
-            .galerija_table_content
-            {
-                border: 0px;
-                border-color: transparent;
-                margin-left: auto;
-                margin-right: auto; 
-            }
-            .galerija_table_td
-            {
-                border: none;
-            }
-        </style>
-
-    </head>
-
-    <!-- <Karolina Civilyte> -->
-    <body>
-
-        <div class="parent-container">
-            <div class="box">
-              <p>Karolina Čivilytė</p>
-            </div>
-            </div>
-        
-        
-        <main id = "main">
-            <!-- Apie -->
-            <section id="apie">
-                <div class="apie_section">
-                    <div class="apie_title">
-                        <h2 style="text-align: center;"><b>Apie mane</b></h2>
-                    </div>
-                    <div class="apie_paragraph">
-                        <p style="text-align: center;">
-                          "Everything has its cause and effect. 
-                          But most people only see what is happening now, and never ask why." - Albert Einstein
-                        </p>
-                    </div>
-                </div>
-            </section>
-            <!-- Faktai -->
-            <section id="faktai">
-                <div class="faktai_title">
-                <h2 style="text-align: center;">Faktai</h2>
-                </div>
-                <div class="faktai_paragraph">
-                    <ul>
-                        <li>I have a twin sister.</li>
-                        <li>like to travel.</li>
-                        <li>likes to take pictures.</li>
-                    </ul>
-                </div>
-            </section>
-            <!-- Įgūdžiai -->
-            <section id="igudziai">
-                <div class="igudziai_title">
-                    <h2 style="text-align: center;">Įgūdžiai</h2>
-                    </div>
-                    <div class="igudziai_table">
-                        <table class="igudziai_table_content">
-                            
-                            <tr>
-                                <th>Procrastination</th>
-                                <th>Adaptation</th>
-                                <th>Communication</th>
-                            </tr>
-                            <tr>
-                                <td style="text-align: center;">
-                                    <img src="skill1.jpeg" alt="placeholder1" height="200" width="300">
-                                </td>
-                                <td style="text-align: center;">
-                                    <img src="skill2.jpg" alt="placeholder2" height="200" width="300">
-                                </td>
-                                <td style="text-align: center;">
-                                    <img src="skill3.jpg" alt="placeholder3" height="200" width="300">
-                                </td>
-                            </tr>
-                        </table>
-                    </div>
-            </section>
-            <!-- Galerija -->
-            <section id="galerija">
-                <div class="galerija_title">
-                    <h2 style="text-align: center;">Galerija</h2>
-                </div>
-                <div class="galerija_table">
-                    <table class="galerija_table_content">
-                        <tr>
-                            <td class="galerija_table_td">
-                                <video width="320" height="240" controls>
-                                    <source width="320" height="240" src="DolomitesCinematic4KMavicAir2-DroneVideo-(1080p).mp4" type="video/mp4">
-                                </video>
-                            </td>
-                            <td class="galerija_table_td" >
-                              <iframe width="320" height="240" src="https://www.youtube.com/embed/RsfNXWo8zMU" title="AMAZING aerial footage of the Dolomites Italy  | 4k Cinematic Drone Video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-                              </td>
-                            <td class="galerija_table_td">
-                                <audio width="320" height="240" controls>
-                                    <source width="320" height="240" src="RiverFlowsInYou.mp3" type="audio/mp3">
-                                </audio>
-                            </td>
-                        </tr>
-                    </table>
-                </div>
-            </section>
-        </main>
-
-    </body>
+	</head>
+	<!-- <Karolina Civilyte> -->
+	<body>
+		<header class="header">
+			<nav class="nav">
+				<ul>
+					<li><a href="#home">Home</a></li>
+					<li><a href="#about">Apie</a></li>
+					<li><a href="#resume">Aprašymas</a></li>
+					<li><a href="#contact">Kontaktai</a></li>
+				</ul>
+			</nav>
+		</header>
+		<div class="parent-container" id="home">
+			
+			<div class="box" style=" height: 100%";>
+					<div>
+					<h1 class="title-h1">Karolina Čivilytė</h1>
+					</div>
+					<div class="box_under">
+					<h2 class="title-h2">PROFESIONALI FOTOGRAFĖ</h2> 
+					</div>
+			</div>
+		</div>
+		<main id = "main">
+			<div class="about section" id = "about">
+			<div class="wrapperY">
+				<div class="apie_title title">
+					<h2><b>Apie mane</b></h2>
+				<p>
+					Sit sint consectetur velit quisquam cupiditate impedit suscipit alias
+					</p>
+				</div>
+			<div class="about-content">
+				<div class="about-img">
+					<img src="avatar.jpg" alt="">
+				</div>
+				<div class="about-main">
+					<div class="about-info">
+						<div class="about-row">
+							<ul>
+								<li><i class="bi bi-chevron-right"></i><span>Vardas: </span>Karolina Čivilytė</li>
+								<li><i class="bi bi-chevron-right"></i><span>Website: </span>www.example.com</li>
+								<li><i class="bi bi-chevron-right"></i><span>Tel. Numeris: </span>+370 600 54 679</li>
+								<li><i class="bi bi-chevron-right"></i><span>City: </span>Vilnius, lt</li>
+							</ul>
+						</div>
+						<div class="about-row">
+							<ul>
+								<li><i class="bi bi-chevron-right"></i><span>Amžius: </span>21</li>
+								<li><i class="bi bi-chevron-right"></i><span>Laipsnis: </span>Magistras</li>
+								<li><i class="bi bi-chevron-right"></i><span>El. paštas: </span>k.civilyte@stud.vilniustech.lt</li>
+								<li><i class="bi bi-chevron-right"></i><span>Freelance: </span>taip</li>
+							</ul>
+						</div>
+					</div>
+					<div class="about-info-info">
+						<div class="about-info-info-row">
+							<div class="about-info-info-item">
+								<div class="about-info-info-item-icon">
+								<i class="bi bi-emoji-smile" bi bi-emoji-smile style="color: #20b38e;"></i>
+								</div>
+								<div class="about-info-info-item-text">
+									<span>232</span>
+								<p><strong>Happy Clients</strong> consequuntur voluptas nostrum aliquid ipsam architecto ut.</p>
+								</div>
+							</div>
+							<div class="about-info-info-item">
+								<div class="about-info-info-item-icon">
+								<i class="bi bi-journal-richtextr" bi bi-emoji-smile style="color: #8a1ac2;"></i>
+								</div>
+								<div class="about-info-info-item-text">
+									<span>521</span>
+									<p><strong>Projects</strong> adipisci atque cum quia aspernatur totam laudantium et quia dere tan</p></div>
+							</div>
+						</div>
+						<div class="about-info-info-row">
+							<div class="about-info-info-item">
+								<div class="about-info-info-item-icon">
+								<i class="bi bi-clock" bi bi-emoji-smile style="color: #2cbdee;"></i>
+								</div>
+								<div class="about-info-info-item-text">
+									<span>18</span>
+									<p><strong>Years of experience</strong> aut commodi quaerat modi aliquam nam ducimus aut voluptate non vel</p></div>
+								</div>
+							<div class="about-info-info-item">
+								<div class="about-info-info-item-icon">
+								<i class="bi bi-award" bi bi-emoji-smile style="color: #ffb459;"></i>
+									
+								</div>
+								<div class="about-info-info-item-text">
+									<span>16</span>
+									<p><strong>Awards</strong> rerum asperiores dolor alias quo reprehenderit eum et nemo pad der</p>								</div>
+							</div>
+					</div>
+				</div>
+				<div class="about-skills">
+					<div class="bars">
+						<div class="bar">
+							<div class="bars-text">
+								<span class="skill">Adobe Premiere Pro </span> <i class="val">100%</i>
+							</div>
+							<progress id="bar1" value="100" max="100"></progress>
+						</div>
+						<div class="bar">
+							<div class="bars-text">
+								<span class="skill">Adobe Photoshop</span> <i class="val">90%</i>
+							</div>
+							<progress id="bar1" value="90" max="100"></progress>
+						</div>
+						<div class="bar">
+							<div class="bars-text">
+								<span class="skill">Adobe Lightroom</span> <i class="val">75%</i>
+							</div>
+							<progress id="bar1" value="75" max="100"></progress>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		</div>
+		<div class="resume section" id="resume">
+			<div class="wrapperY">
+				<div class="resume_title title">
+					<h2><b>Aprašymas</b></h2>
+				<p>
+					Sit sint consectetur velit quisquam cupiditate impedit suscipit alias					</p>
+				</div>
+				<div class="resume-blocks">
+					<div class="resume-block">
+						<div class="resume-item-title"><h3>Aprašymas</h3></div>
+							<div class="resume-item rt0">
+								<h4>Karolina Čivilytė</h4>
+								<p><em>Kūrybinga ir detaliai orientuotas fotografė su daugiau nei 7 metų patirtimi, kuri įamžina įtaigius momentus ir kuria vizualiai įspūdingus vaizdus. Moku įvairias fotografijos technikas, esu gerai susipažinusi su fotografijos įranga ir redagavimo programomis.</em></p>
+								<ul>
+									<li>Plytinės g. 25, 10105 Vilnius</li>
+									<li>+370 600 54 679</li>
+									<li>k.civilyte@stud.vilniustech.lt</li>
+								</ul>
+							</div>
+						<div class="resume-item-title"><h3>Išsilavinimas</h3></div>
+							<div class="resume-item">
+								<h4>FOTOGRAFIJOS MAGISTRO LAIPSNIS</h4>
+								<h5>2015 - 2016</h5>
+								<p><em>Vilniaus dailės akademija, Vilnius</em></p>
+								<p>Specializavimasis pažangiose fotografijos technikose, vizualiniame pasakojime ir nuotraukų apdorojimo metodų tobulinime, siekiant pagerinti vaizdo kokybę.</p>
+							</div>
+							<div class="resume-item">
+								<h4>FOTOGRAFIJA IR MEDIJOS MENO BAKALAURAS</h4>
+								<h5>2010 - 2014</h5>
+								<p><em>Vilniaus dailės akademija, Vilnius</em></p>
+								<p>Studijavau įvairias fotografijos sritis, įskaitant portretų, peizažų ir komercinę fotografiją. Įgijau tvirtą pagrindą vizualinių menų ir kompozicijos principuose.</p>
+							</div>			
+					</div>
+					<div class="resume-block">
+						<div class="resume-item-title"><h3>Patirtis</h3></div>
+							<div class="resume-item">
+								<h4>VYRIAUSIASIS FOTOGRAFAS PROJEKTŲ VYKDIME</h4>
+								<h5>2019 - dabar</h5>
+								<p><em>"Verslo projektai", Vilnius </em></p>
+								<ul>
+									<li>Vadovavimas ir vykdymas įvairių klientų fotosesijoms, užtikrinant aukštos kokybės vaizdus, atitinkančius jų konkretų poreikį.</li>
+									<li>Vadovavimas 3 fotografų komandai, kontroliuojant projektų priskyrimą ir teikiant kūrybinį nurodymą.</li>
+									<li>Bendradarbiavimas su klientais, siekiant suprasti jų viziją ir pristatyti išskirtinį vizualinį turinį, atitinkantį jų prekės ženklą.</li>
+									<li>Naudojimas pažangia redagavimo programa, siekiant pagerinti ir retušuoti vaizdus galutiniam pristatymui.</li>
+								</ul>
+							</div>
+							<div class="resume-item">
+								<h4>FOTOGRAFIJOS ASISTENTAS</h4>
+								<h5>2017 - 2018</h5>
+								<p><em>"Fotografijos virtuvė", Vilnius</em></p>
+								<ul>
+									<li>Padėjimas vadovaujantiems fotografas organizuojant įrangą, scenų paruošimą ir užtikrinant sklandų darbą fotosesijų metu.</li>
+									<li>Tvarkyti produkcijos nuotraukas, įskaitant redagavimą, retušavimą ir skaitmeninių failų tvarkymą.</li>
+									<li> Dalyvavimas tarptautinėse fotografijos projektuose.</li>
+									<li>Tvarkyti administracines užduotis ir užtikrinti klientų komunikaciją, taip pat užtikrinti sklandų projekto vykdymą.</li>
+								</ul>
+							</div>
+					</div>
+					
+				</div>
+				<a href="" onclick="window.print()" class="print">print</a>
+				
+			</div>
+			
+		</div>
+		<div class="contact section" id="contact">
+			<div class="wrapperY">
+				<div class="resume_title title">
+					<h2><b>Kontaktai</b></h2>
+				<p>
+					Sit sint consectetur velit quisquam cupiditate impedit suscipit alias					</p>
+				</div>
+				<div class="contact-blocks">
+					<div class="contact-block">
+						<div class="contact-block1">
+							<i class='bx bx-share-alt'></i>
+							<h3>Social Profiles</h3>
+							<div class="social-links">
+								<a href="https://twitter.com/" target="_blank" class="twitter"><i class="bi bi-twitter"></i></a>
+								<a href="https://facebook.com/" target="_blank" class="facebook"><i class="bi bi-facebook"></i></a>
+								<a href="https://instagram.com/" target="_blank" class="instagram"><i class="bi bi-instagram"></i></a>
+								<a href="https://skype.com/en/" target="_blank" class="skype"><i class="bi bi-skype"></i></a>
+								<a href="https://lt.linkedin.com/" target="_blank" class="linkedin"><i class="bi bi-linkedin"></i></a>
+							  </div>
+						</div>
+						<div class="contact-block2">
+							<div class="contact-block2_1">
+								<i class="bx bx-envelope"></i>
+								<h3>Email Me</h3>
+								<p>k.civilyte@stud.vilniustech.lt</p>
+							</div>
+							<div class="contact-block2_2">
+								<i class="bx bx-phone-call"></i>
+								<h3>Call Me</h3>
+								<p>+370 600 54 679</p>
+							</div>
+						</div>
+					</div>
+					<div class="contact-block">
+						<form action="#" method="post" class="form">
+							<div class="row">
+							  <div class="col-md-6 form-group">
+								<input type="text" name="name" class="form-control" placeholder="Jūsų vardas" required>
+							  </div>
+							  <div class="col-md-6 form-group mt-3 mt-md-0">
+								<input type="email" class="form-control" name="email" placeholder="Jūsų el. paštas" required>
+							  </div>
+							</div>
+							<div class="form-group mt-3">
+							  <input type="text" class="form-control" name="subject" id="subject" placeholder="Tema" required>
+							</div>
+							<div class="form-group mt-3">
+							  <textarea class="form-control textarea" name="message" rows="6" placeholder="Tekstas" required></textarea>
+							</div>
+							<div class="form-submit"><button type="submit">Siųsti</button></div>
+						  </form>
+					</div>
+				</div>
+			</div>
+		</div>
+			
+		</main>
+		<footer class="footer">
+			<div class="wrapperY">
+				<h3>Karolina Čivilytė</h3>
+				<p>Et aut eum quis fuga eos sunt ipsa nihil. Labore corporis magni eligendi fuga maxime saepe commodi placeat.</p>
+				<div class="social-links">
+					<a href="https://twitter.com/" target="_blank" class="twitter"><i class="bi bi-twitter"></i></a>
+					<a href="https://facebook.com/" target="_blank" class="facebook"><i class="bi bi-facebook"></i></a>
+					<a href="https://instagram.com/" target="_blank" class="instagram"><i class="bi bi-instagram"></i></a>
+					<a href="https://skype.com/en/" target="_blank" class="skype"><i class="bi bi-skype"></i></a>
+					<a href="https://lt.linkedin.com/" target="_blank" class="linkedin"><i class="bi bi-linkedin"></i></a>
+				  </div>
+				<div class="copyright">
+					© Copyright <strong>Karolina</strong>. All Rights Reserved
+				  </div>
+			</div>
+		</footer>
+		
+	</body>
+</html>
